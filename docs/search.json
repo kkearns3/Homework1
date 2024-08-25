@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "Data Science.html",
+    "href": "Data Science.html",
+    "title": "Data Science",
+    "section": "",
+    "text": "What do you think being a data scientist is about?\n\nI thought I knew.\n\nWhat differences/similarities do you see between data scientists and statisticians?\n\nI haven’t met many actual data scientists, but the few I have met all have very different backgrounds and skillsets, and all had at least one glaring blindspot.\n\nHow do you view yourself in relation to these two areas?\n\nI am somewhere in between and am faking it until I make it."
+  },
+  {
+    "objectID": "Data Science.html#data-science-questions",
+    "href": "Data Science.html#data-science-questions",
+    "title": "Data Science",
+    "section": "",
+    "text": "What do you think being a data scientist is about?\n\nI thought I knew.\n\nWhat differences/similarities do you see between data scientists and statisticians?\n\nI haven’t met many actual data scientists, but the few I have met all have very different backgrounds and skillsets, and all had at least one glaring blindspot.\n\nHow do you view yourself in relation to these two areas?\n\nI am somewhere in between and am faking it until I make it."
+  },
+  {
+    "objectID": "Data Science.html#running-code",
+    "href": "Data Science.html#running-code",
+    "title": "Data Science",
+    "section": "Running Code",
+    "text": "Running Code\nDensity function for Petal Width from the Iris data set\n\ny &lt;- density(iris$Petal.Width)\n\nFurther information about this R object\n\nclass(y)\n\n[1] \"density\"\n\ntypeof(y)\n\n[1] \"list\"\n\nstructure(y)\n\n\nCall:\n    density.default(x = iris$Petal.Width)\n\nData: iris$Petal.Width (150 obs.);  Bandwidth 'bw' = 0.2518\n\n       x                 y            \n Min.   :-0.6555   Min.   :0.0005272  \n 1st Qu.: 0.3222   1st Qu.:0.0832811  \n Median : 1.3000   Median :0.2653324  \n Mean   : 1.3000   Mean   :0.2554014  \n 3rd Qu.: 2.2778   3rd Qu.:0.4193541  \n Max.   : 3.2555   Max.   :0.4978541  \n\n\nHere’s a plot\n\n\n\n\n\n\n\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  }
+]

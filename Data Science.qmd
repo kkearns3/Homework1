@@ -1,0 +1,38 @@
+---
+title: "Data Science"
+format: html
+editor: visual
+---
+
+## Data Science Questions
+
+(@) *What do you think being a data scientist is about?*
+    + I thought I knew.
+(@) *What differences/similarities do you see between data scientists and statisticians?*
+    + I haven't met many actual data scientists, but the few I have met all have very different backgrounds and skillsets, and all had at least one glaring blindspot.
+(@) *How do you view yourself in relation to these two areas?*
+    + I am somewhere in between and am faking it until I make it.
+
+## Running Code
+
+Density function for Petal Width from the Iris data set
+
+```{r}
+y <- density(iris$Petal.Width)
+```
+
+Further information about this R object
+```{r}
+class(y)
+typeof(y)
+structure(y)
+```
+
+Here's a plot
+
+```{r}
+#| echo: false
+plot(y)
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
