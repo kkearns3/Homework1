@@ -138,40 +138,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol class="example" type="1">
 <li><em>What do you think being a data scientist is about?</em>
 <ul>
-<li>It seems like the definition of a data scientist isn’t standardized, an idea I noticed both in Indeed job postings and also in the readings we were assigned this week. Ultimately, they help draw conclusions using data. They often have training or educational credentials beyond the undergraduate level, but usually not a PhD.</li>
+<li>Prior to this class, my impression was that data scientists need to use mathematical and/or logical principles to make sense of large amounts of data from both conventional and unconventional sources. They require skills in programming (SQL/Python/R/maybe SAS) and visualization (Tableau/Power BI) with enough of a mathematical background to logically and efficiently piece together disparate tables and analyze them soundly. I also thought that statistics was an important piece of this; a data scientist needs to understand enough methodology to recognize good and sufficient data and how to draw sound conclusions from them. After the readings for this week, I would add that the current atmosphere seems to have a lot of buzz around machine learning and artificial intelligence, but I don’t know how long-term that is.</li>
 </ul></li>
-<li><em>What differences/similarities do you see between data scientists and statisticians?</em></li>
-</ol>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Characteristic/Skill</th>
-<th style="text-align: center;">Statistician</th>
-<th style="text-align: center;">Data Scientist</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">SQL</td>
-<td style="text-align: center;">[ ]</td>
-<td style="text-align: center;">[x]</td>
-</tr>
-</tbody>
-</table>
-<ol start="3" class="example" type="1">
+<li><em>What differences/similarities do you see between data scientists and statisticians?</em>
+<ul>
+<li>Statisticians have more classical training, and probably have more mathematics/calculus background than a data scientist.</li>
+<li>Statisticians may have more focus on setting up experiments/data collection with a large enough sample size so they can ensure their results are valid and as close of an approximation to the actual value as they feel is necessary. This front-end planning is really important for making sure the conclusions they get are sound, and they have tools and methods that communicate how “good” their results are and are clear about what their results <em>don’t</em> say.</li>
+<li>I get the impression that data scientists often have data dumped in their laps (or maybe they write data-mining scripts) and then they need to fit the right model. They wouldn’t necessarily focus on designing experiments so much as gathering data that is already there.</li>
+<li>I believe one of the readings talked about how data scientists can use atypical things as data that statisticians don’t (e.g.&nbsp;images).</li>
+<li>Data scientists seem to be more variable in terms of their background and expectations, something I’d noticed in job postings on Indeed and in the different approaches new Data Science/Analytics degrees have, and now in the readings for this week.</li>
+<li>Data science I think is something you can do really well with a statistics background, but it would be much harder to do thorough advanced statistical analyses with just a data science background.</li>
+</ul></li>
 <li><em>How do you view yourself in relation to these two areas?</em>
 <ul>
-<li>I am somewhere in between and am faking it until I make it.</li>
+<li>I am somewhere in between. Data science is really broad, and very useful for probably most (all?) industries…but I feel that data science-focused graduate programs are too new and variable right now. I feel that gaining skills from the classical, well-established discipline of statistics will be more applicable and less vulnerable to obsolescence than a data science program. Honestly, I’m not sure exactly where I fit in, and it’s part of what I hope to understand better from this class.</li>
 </ul></li>
 </ol>
 </section>
-<section id="running-code" class="level2">
-<h2 class="anchored" data-anchor-id="running-code">Running Code</h2>
-<p>Density function for Petal Width from the Iris data set</p>
+<section id="demonstrating-functions-on-the-iris-data-set" class="level2">
+<h2 class="anchored" data-anchor-id="demonstrating-functions-on-the-iris-data-set">Demonstrating functions on the Iris data set</h2>
+<section id="density-function-for-petal-width-from-the-iris-data-set" class="level4">
+<h4 class="anchored" data-anchor-id="density-function-for-petal-width-from-the-iris-data-set"><em>Density function for Petal Width from the Iris data set</em></h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">density</span>(iris<span class="sc">$</span>Petal.Width)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Further information about this R object</p>
+</section>
+<section id="further-information-about-this-r-object" class="level4">
+<h4 class="anchored" data-anchor-id="further-information-about-this-r-object"><em>Further information about this R object</em></h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -198,19 +191,21 @@ Data: iris$Petal.Width (150 obs.);  Bandwidth 'bw' = 0.2518
  Max.   : 3.2555   Max.   :0.4978541  </code></pre>
 </div>
 </div>
-<p>Here’s a plot</p>
+</section>
+<section id="plot-of-a-density-function-on-petal-width" class="level4">
+<h4 class="anchored" data-anchor-id="plot-of-a-density-function-on-petal-width"><em>Plot of a density function on Petal Width</em></h4>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Data-Science_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="DataScience_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -20,20 +20,20 @@ editor: visual
 
 ## Demonstrating functions on the Iris data set
 
-### Density function for Petal Width from the Iris data set
+#### *Density function for Petal Width from the Iris data set*
 
 ```{r}
 y <- density(iris$Petal.Width)
 ```
 
-### Further information about this R object
+#### *Further information about this R object*
 ```{r}
 class(y)
 typeof(y)
 structure(y)
 ```
 
-### Plot of a density function on Petal Width
+#### *Plot of a density function on Petal Width*
 
 ```{r}
 #| echo: false
