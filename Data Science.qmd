@@ -7,32 +7,36 @@ editor: visual
 ## Data Science Questions
 
 (@) *What do you think being a data scientist is about?*
-    + I thought I knew.
+    + Prior to this class, my impression was that data scientists need to use mathematical and/or logical principles to make sense of large amounts of data from both conventional and unconventional sources. They require skills in programming (SQL/Python/R/maybe SAS) and visualization (Tableau/Power BI) with enough of a mathematical background to logically and efficiently piece together disparate tables and analyze them soundly. I also thought that statistics was an important piece of this; a data scientist needs to understand enough methodology to recognize good and sufficient data and how to draw sound conclusions from them. After the readings for this week, I would add that the current atmosphere seems to have a lot of buzz around machine learning and artificial intelligence, but I don't know how long-term that is.
 (@) *What differences/similarities do you see between data scientists and statisticians?*
-    + I haven't met many actual data scientists, but the few I have met all have very different backgrounds and skillsets, and all had at least one glaring blindspot.
+    + Statisticians have more classical training, and probably have more mathematics/calculus background than a data scientist. 
+    + Statisticians may have more focus on setting up experiments/data collection with a large enough sample size so they can ensure their results are valid and as close of an approximation to the actual value as they feel is necessary. This front-end planning is really important for making sure the conclusions they get are sound, and they have tools and methods that communicate how "good" their results are and are clear about what their results *don't* say.
+    + I get the impression that data scientists often have data dumped in their laps (or maybe they write data-mining scripts) and then they need to fit the right model. They wouldn't necessarily focus on designing experiments so much as gathering data that is already there. 
+    + I believe one of the readings talked about how data scientists can use atypical things as data that statisticians don't (e.g. images).
+    + Data scientists seem to be more variable in terms of their background and expectations, something I'd noticed in job postings on Indeed and in the different approaches new Data Science/Analytics degrees have, and now in the readings for this week.
+    + Data science I think is something you can do really well with a statistics background, but it would be much harder to do thorough advanced statistical analyses with just a data science background.
 (@) *How do you view yourself in relation to these two areas?*
-    + I am somewhere in between and am faking it until I make it.
+    + I am somewhere in between. Data science is really broad, and very useful for probably most (all?) industries...but I feel that data science-focused graduate programs are too new and variable right now. I feel that gaining skills from the classical, well-established discipline of statistics will be more applicable and less vulnerable to obsolescence than a data science program. Honestly, I'm not sure exactly where I fit in, and it's part of what I hope to understand better from this class.
 
-## Running Code
+## Demonstrating functions on the Iris data set
 
-Density function for Petal Width from the Iris data set
+### Density function for Petal Width from the Iris data set
 
 ```{r}
 y <- density(iris$Petal.Width)
 ```
 
-Further information about this R object
+### Further information about this R object
 ```{r}
 class(y)
 typeof(y)
 structure(y)
 ```
 
-Here's a plot
+### Plot of a density function on Petal Width
 
 ```{r}
 #| echo: false
 plot(y)
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
